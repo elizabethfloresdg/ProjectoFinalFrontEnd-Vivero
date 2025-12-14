@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ProjectoFinalFront-End</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo--nav">
+        <div class="logo--container">
+          <img src="./imagenes/hoja2.png" alt="" />
+          <h1>Vivero</h1>
+        </div>
+        <div class="carrito__icono_1">
+          <a href="#carrito">
+            <i
+              class="fa-solid fa-cart-shopping"
+              style="color: antiquewhite"
+            ></i>
+          </a>
+          <span class="carrito__contador">0</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#sobre--nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenias">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <div class="carrito__icono_2">
+              <a href="#carrito">
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: antiquewhite"
+                ></i>
+              </a>
+              <span class="carrito__contador">0</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section id="inicio">
+        <div class="contenido--inicio">
+          <h2>Tu espacio, más vivo.</h2>
+          <p>
+            Las plantas transforman cualquier espacio: aportan frescura, estilo
+            y una energía única que se siente apenas entrás. Queremos que tu
+            hogar respire vida y que cada rincón tenga ese detalle verde que
+            siempre te arranca una sonrisa.
+          </p>
+          <a href="#productos"><button>Descubrir colección</button></a>
+        </div>
+        <div class="video">
+          <iframe
+            height="300px"
+            width="630px"
+            src="https://www.youtube.com/embed/MZXruLZf5CI"
+            title="Video para vivero"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="banner-iconos">
+          <i class="fa-solid fa-truck-fast" style="color: #ffffff"></i>
+          <p>Envios rápidos</p>
+        </div>
+        <div class="banner-iconos">
+          <i class="fa-solid fa-cash-register" style="color: #ffffff"></i>
+          <p>Todos los metodos de pago</p>
+        </div>
+        <div class="banner-iconos">
+          <i class="fa-solid fa-shield-halved" style="color: #ffffff"></i>
+          <p>Compra segura</p>
+        </div>
+      </section>
+      <section id="sobre--nosotros">
+        <h2>Sobre nosotros</h2>
+        <div class="nosotros--info">
+          <div class="informacion">
+            <img src="./imagenes/vivero.jpg" alt=" pareja cargando plantas" />
+            <div class="textos--info">
+              <h3>Una vida más verde, juntos</h3>
+              <p>
+                Amamos las plantas y creemos en su poder para transformar los
+                espacios y el ánimo. Seleccionamos cada especie con cuidado,
+                pensando en quienes buscan conectar con la naturaleza desde
+                casa. Ofrecemos plantas sanas, hermosas y fáciles de cuidar,
+                junto con consejos y acompañamiento para que crezcan contigo.
+                Nuestro objetivo es simple: llenar tu hogar de vida verde y
+                momentos tranquilos.
+              </p>
+              <br />
+              <p>
+                Más que vender plantas, queremos crear una comunidad que crece
+                junta. Compartimos consejos, ideas y cuidados para que cada
+                persona pueda disfrutar del placer de ver la vida verde florecer
+                día a día. Porque creemos que cuidar una planta es también una
+                forma de cuidarnos entre todos.
+              </p>
+            </div>
+          </div>
+          <div class="info--2">
+            <img src="./imagenes/vivero2.jpg" alt="" />
+            <img src="./imagenes/vivero 3.jpg" alt="" />
+            <img src="./imagenes/vivero 4.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="productos">
+        <h2>Productos</h2>
+        <div id="productos--contenedor" class="productos--contenedor"></div>
+      </section>
+      <section id="carrito" class="carrito">
+        <div class="carrito__contenedor">
+          <div class="carrito__header">
+            <h2 class="carrito__titulo">Carrito de compras</h2>
+          </div>
+
+          <div class="carrito__contenido">
+            <div class="carrito__lista">
+              <!-- Contenedor Carrito -->
+            </div>
+          </div>
+          <p class="carrito__total">Total: $<span id="totalCompra">0</span></p>
+
+          <button type="button" class="carrito__vaciar">Vaciar carrito</button>
+        </div>
+      </section>
+      <section class="banner--2">
+        <i class="fa-solid fa-heart" style="color: #000000"></i>
+        <p>Cada cliente es importante</p>
+      </section>
+      <section id="resenias">
+        <h2>Reseñas</h2>
+        <div class="resenias--contenedor">
+          <article class="card">
+            <img src="./imagenes/persona 1.2.jpg" alt="chico joven" />
+            <div class="card--contenido">
+              <h3>Juan</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>27/10/2025</p>
+              <p>
+                “Compré una planta mariposa y una monstera, y llegaron
+                preciosas, muy bien empaquetadas y sanas. Se nota que las cuidan
+                con cariño. Venían con una tarjetita con consejos de riego que
+                me ayudó un montón. Ya pasaron unas semanas y están creciendo re
+                lindas.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 2.jpg" alt="chica joven" />
+            <div class="card--contenido">
+              <h3>Lucia</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>29/10/2025</p>
+              <p>
+                “Compré una planta para regalar y fue un acierto total. Llegó
+                impecable y mucho más linda de lo que esperaba. La persona que
+                la recibió quedó feliz. Me gustó mucho el cuidado en la entrega
+                y la atención. Se nota que hacen las cosas con amor.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 3.jpg" alt="chica joven" />
+            <div class="card--contenido">
+              <h3>Marina</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>11/11/2025</p>
+              <p>
+                “Era la primera vez que compraba plantas y tenía miedo de no
+                saber cuidarlas, pero me explicaron todo de forma simple. La
+                planta llegó hermosa, con hojas sanas y bien protegida. Me dio
+                mucha confianza y seguro vuelvo a comprar.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 4.jpg" alt="chica joven" />
+            <div class="card--contenido">
+              <h3>Cami</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>13/11/2025</p>
+              <p>
+                “Las plantas llegaron sanas y hermosas. Se nota el cuidado en
+                cada detalle. Muy recomendable.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 5.jpg" alt="chico joven" />
+            <div class="card--contenido">
+              <h3>Luis</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i
+                  class="fa-solid fa-star-half-stroke"
+                  style="color: #d7b333"
+                ></i>
+              </p>
+              <p>21/11/2025</p>
+              <p>
+                “La planta llegó linda y bien cuidada, aunque esperaba que fuera
+                un poco más grande. Igualmente está sana y con el tiempo va a
+                crecer, así que en general quedé conforme.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 6.jpg" alt="chico joven" />
+            <div class="card--contenido">
+              <h3>Carlos</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>21/11/2025</p>
+              <p>
+                “Las plantas llegaron hermosas, con hojas firmes y bien verdes.
+                Me gustó mucho el cuidado en el envío y que vinieran con
+                indicaciones claras. Se nota que no es una venta apurada, sino
+                que realmente les importa el estado de cada planta.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 7.jpg" alt="chica joven" />
+            <div class="card--contenido">
+              <h3>Laura</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>27/11/2025</p>
+              <p>
+                “Compré por recomendación y la verdad que superó mis
+                expectativas. Todo muy prolijo y la planta está creciendo
+                espectacular. Da gusto comprar así.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 8.jpg" alt="chica joven" />
+            <div class="card--contenido">
+              <h3>Ani</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>01/12/2025</p>
+              <p>
+                “Me encantó la experiencia. Se nota el cuidado y el amor por lo
+                que hacen. Mi casa cambió totalmente con estas plantas, aportan
+                mucha calma y vida.”
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagenes/persona 9.jpg" alt="chico joven" />
+            <div class="card--contenido">
+              <h3>Mario</h3>
+              <p>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-solid fa-star" style="color: #d7b333"></i>
+                <i class="fa-regular fa-star" style="color: #d7b333"></i>
+              </p>
+              <p>06/12/2025</p>
+              <p>
+                “No tuve problemas con la planta, llegó sana, pero el envío se
+                demoró más de lo previsto. Más allá de eso, la calidad es
+                buena.”
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form
+          id="formulario"
+          class="contact-form"
+          action="https://formspree.io/f/xpwyoqpg"
+          method="POST"
+        >
+          <div class="input-container">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="input-container">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="input-container">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+          <p id="mensaje-form"></p>
+        </form>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5522.881159232414!2d-58.436034861423984!3d-34.606063416247096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1757460690656!5m2!1ses-419!2sar"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!--  
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Mensaje</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" style="text-align:center; font-weight:bold;">
+                                Mensajes pendientes de respuesta
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jose martinez</td>
+                            <td>jose@example.com</td>
+                            <td>Hola, quisiera saber si hacen envíos al interior.</td>
+                            <td>Pendiente</td>
+                        </tr>
+                
+                        <tr>
+                            <td>jose martinez</td>
+                            <td>jose@example.com</td>
+                            <td>¿Tienen plantas de interior resistentes al frío?</td>
+                            <td>Pendiente</td>
+                        </tr>
+                        <tr>
+                            <td>jose martinez</td>
+                            <td>jose@example.com</td>
+                            <td>Hola, quisiera saber si hacen envíos al interior.</td>
+                            <td>Pendiente</td>
+                        </tr>
+                
+                        <tr>
+                            <td>jose martinez</td>
+                            <td>jose@example.com</td>
+                            <td>¿Tienen plantas de interior resistentes al frío?</td>
+                            <td>Pendiente</td>
+                        </tr>-->
+      </section>
+    </main>
+    <footer class="footer">
+      <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+      <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+      <i class="fa-brands fa-tiktok" style="color: #ffffff"></i>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
