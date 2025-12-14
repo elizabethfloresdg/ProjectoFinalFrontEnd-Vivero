@@ -14,7 +14,7 @@ const plantas = [
     descripcion:
       "Planta protagonista por sus hojas grandes y brillantes. Ideal para espacios luminosos y modernos.",
     precio: 32000,
-    imagen: "./imagenes/ficus lyrata.jpg",
+    imagen: "./imagenes/ficus_lyrata.jpg",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const plantas = [
     descripcion:
       "De hojas grandes y contrastadas. Ideal para ambientes cálidos y bien iluminados.",
     precio: 35000,
-    imagen: "./imagenes/Alocasia amazonica.jpg",
+    imagen: "./imagenes/alocasia_amazonica.jpg",
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ const plantas = [
     descripcion:
       "Planta colgante con hojas verdes y amarillas. Muy decorativa y fácil de cuidar.",
     precio: 17000,
-    imagen: "./imagenes/philodendron brasil.jpg",
+    imagen: "./imagenes/philodendron_brasil.jpg",
   },
   {
     id: 9,
@@ -70,7 +70,7 @@ const plantas = [
     descripcion:
       "Clásico y frondoso, ideal para dar frescura a interiores luminosos.",
     precio: 16000,
-    imagen: "./imagenes/Helecho Boston.jpg",
+    imagen: "./imagenes/helecho_boston.jpg",
   },
   {
     id: 10,
@@ -78,7 +78,7 @@ const plantas = [
     descripcion:
       "Compacta y decorativa, con hojas carnosas. Ideal para estanterías y escritorios.",
     precio: 14000,
-    imagen: "./imagenes/Peperomia obtusifolia.jpg",
+    imagen: "./imagenes/peperomia_obtusifolia.jpg",
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ const plantas = [
     descripcion:
       "Minimalista y de bajo mantenimiento. Perfecto para espacios pequeños.",
     precio: 12000,
-    imagen: "./imagenes/Cactus columnar.jpg",
+    imagen: "./imagenes/cactus_columnar.jpg",
   },
   {
     id: 12,
@@ -94,14 +94,14 @@ const plantas = [
     descripcion:
       "Pequeña y decorativa, ideal para sumar verde en cualquier rincón.",
     precio: 9000,
-    imagen: "./imagenes/Suculenta echeveria.jpg",
+    imagen: "./imagenes/suculenta_echeveria.jpg",
   },
   {
     id: 13,
     titulo: "Dracaena marginata",
     descripcion: "Estilizada y moderna, perfecta para livings y oficinas.",
     precio: 27000,
-    imagen: "./imagenes/Dracaena marginata.jpg",
+    imagen: "./imagenes/dracaena_marginata.jpg",
   },
   {
     id: 14,
@@ -109,7 +109,7 @@ const plantas = [
     descripcion:
       "Aporta frescura y movimiento. Ideal para espacios amplios y luminosos.",
     precio: 40000,
-    imagen: "./imagenes/Palmera areca.jpg",
+    imagen: "./imagenes/palmera_areca.jpg",
   },
   {
     id: 15,
@@ -117,7 +117,7 @@ const plantas = [
     descripcion:
       "Planta floral de gran presencia. Sus flores aportan color y elegancia.",
     precio: 30000,
-    imagen: "./imagenes/Anturio rojo.jpg",
+    imagen: "./imagenes/anturio_rojo.jpg",
   },
 ];
 
