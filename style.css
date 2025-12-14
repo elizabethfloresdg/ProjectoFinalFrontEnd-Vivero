@@ -345,6 +345,7 @@ li a {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 1rem;
+    border: solid 2px black;
 }
 
 .carrito__item--text {

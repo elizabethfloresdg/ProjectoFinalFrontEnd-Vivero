@@ -225,7 +225,7 @@ const contadoresCarrito = document.querySelectorAll(".carrito__contador");
 const btnVaciar = document.querySelector(".carrito__vaciar");
 const totalCompra = document.getElementById("totalCompra");
 
-/* AGREGAR AL CARRITO */
+/* agregar al carrito */
 
 function agregarAlCarrito(producto) {
   const productoExistente = carrito.find((item) => item.id === producto.id);
@@ -244,17 +244,13 @@ function agregarAlCarrito(producto) {
   actualizarTotal();
 }
 
-/* =======================
-   GUARDAR EN STORAGE
-======================= */
+/*guardar en storage*/
 
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-/* =======================
-   RENDER CARRITO
-======================= */
+/* render del carrito*/
 
 function renderCarrito() {
   listaCarrito.innerHTML = "";
@@ -277,9 +273,7 @@ function renderCarrito() {
   actualizarContador();
 }
 
-/* =======================
-   CONTADOR
-======================= */
+/* contador*/
 
 function actualizarContador() {
   const total = carrito.reduce((acc, item) => acc + item.cantidad, 0);
@@ -298,9 +292,7 @@ function actualizarTotal() {
   totalCompra.textContent = total;
 }
 
-/* =======================
-   VACIAR CARRITO
-======================= */
+/* vaciar carrito */
 
 btnVaciar.addEventListener("click", () => {
   carrito = [];
@@ -309,9 +301,7 @@ btnVaciar.addEventListener("click", () => {
   actualizarTotal();
 });
 
-/* =======================
-   INICIALIZAR
-======================= */
+/* inicializar*/
 
 renderCarrito();
 actualizarTotal();
